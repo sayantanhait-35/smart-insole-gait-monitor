@@ -8,7 +8,7 @@ A wireless smart insole that measures plantar pressure with four 3D-printed, CNT
 
 ## Background
 
-This project builds on my undergraduate research in the Flexible Bioelectronics and Wearables Lab, Shiv Nadar Institution of Eminence (OUR programme, Sep 2025 – Jul 2026, supervisor Dr. Debarun Sengupta). The aim is continuous gait monitoring outside the clinic, for example to detect freezing of gait in Parkinson's disease.
+This project builds on my undergraduate research in the [Flexible Bioelectronics and Wearables Lab](https://snu.edu.in/research-labs/flexible-bioelectronics-and-wearables-laboratory/), Shiv Nadar Institution of Eminence (OUR programme, Sep 2025 – Jul 2026, supervisor [Dr. Debarun Sengupta](https://snu.edu.in/faculty/debarun-sengupta/)). The aim is continuous gait monitoring outside the clinic, for example to detect freezing of gait in Parkinson's disease.
 
 | Wired prototype (OUR) | One sensor | Lattice before and after CNT coating |
 |---|---|---|
@@ -74,7 +74,7 @@ Wiring is described at the top of each `.ino` file. Keep your foot off the insol
 
 ## Acknowledgements
 
-Supervisor: Dr. Debarun Sengupta. Thanks to Dhairya Naryan and Richa Tyagi (Flexible Bioelectronics and Wearables Lab) and the Opportunities for Undergraduate Research (OUR) programme, Shiv Nadar Institution of Eminence.
+Supervisor: [Dr. Debarun Sengupta](https://snu.edu.in/faculty/debarun-sengupta/). Thanks to Dhairya Naryan and Richa Tyagi (Flexible Bioelectronics and Wearables Lab) and the Opportunities for Undergraduate Research (OUR) programme, Shiv Nadar Institution of Eminence.
 
 ## License
 
