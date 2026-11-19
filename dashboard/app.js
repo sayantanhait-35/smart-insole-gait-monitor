@@ -249,7 +249,14 @@ function drawHeat(v) {
 
 const trace = document.getElementById('trace'), tctx = trace.getContext('2d');
 function drawTrace() {
-  const W = trace.width, H = trace.height, L = 46, R = 10, T = 10, B = 26;
+  // Size the canvas to its on-screen width so text and lines stay sharp and readable on phones.
+  const dpr = window.devicePixelRatio || 1;
+  const W = Math.max(240, trace.clientWidth || 900), H = Math.round(Math.min(300, Math.max(200, W * 0.4)));
+  if (trace.width !== Math.round(W * dpr) || trace.height !== Math.round(H * dpr)) {
+    trace.width = Math.round(W * dpr); trace.height = Math.round(H * dpr); trace.style.height = H + 'px';
+  }
+  tctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const L = 46, R = 10, T = 10, B = 26;
   tctx.clearRect(0, 0, W, H);
   tctx.font = '12px -apple-system, Helvetica, Arial'; tctx.fillStyle = '#5e6873'; tctx.strokeStyle = '#e3e7ec'; tctx.lineWidth = 1;
   const ymax = dispMax(), step = showN ? 50 : 0.5;
